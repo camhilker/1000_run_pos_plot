@@ -6,7 +6,7 @@ import plotly.express as px
 
 import pandas as pd
 
-plot = pd.read_csv('plotly_pos_data.csv')
+plot = pd.read_csv('tom_plotly_pos_data.csv')
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
