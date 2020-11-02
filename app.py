@@ -46,7 +46,7 @@ app.layout = html.Div([
     [Input('chrom-slider', 'value')],
     [Input('overlap_set', 'value')])
 def update_figure(chrom_selection, snp_set):
-    fig = px.scatter(plot[plot['chrom']==chrom_selection], x="pos", y="ave_imp_value", size="std_imp_value", color=snp_set, color_discrete_map={True:'red', False:'lime'}, range_y=[0.001, 0.01],
+    fig = px.scatter(plot[plot['chrom']==chrom_selection], x="pos", y="ave_imp_value", size="std_imp_value", color=snp_set, color_discrete_map={True:'red', False:'lime'}, range_y=[0.0005, 0.005],
                  hover_name="snp", width=1200, height=800, 
                  labels={'ave_imp_value':'Average RF Importance Value', 
                  'count':'Number of Times in Top Features', 
